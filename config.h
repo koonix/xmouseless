@@ -50,15 +50,15 @@ static ScrollBinding scroll_bindings[] = {
 /* executes shell commands */
 static ShellBinding shell_bindings[] = {
     /* key         command */
-    { XK_1,        "xdotool mousemove 0 0" },
-    { XK_2,        "xdotool mousemove --polar 0 9999" },
-    { XK_3,        "xdotool mousemove 9999 0" },
-    { XK_4,        "xdotool mousemove --polar 270 9999" },
+    { XK_1,        "xdotool mousemove 0 0 mousemove_relative 50 50" },
+    { XK_2,        "xdotool mousemove --polar 0 9999 mousemove_relative 0 50" },
+    { XK_3,        "xdotool mousemove 9999 0 mousemove_relative -- -50 50" },
+    { XK_4,        "xdotool mousemove --polar 270 9999 mousemove_relative 50 0" },
     { XK_5,        "xdotool mousemove --polar 0 0" },
-    { XK_6,        "xdotool mousemove --polar 90 9999" },
-    { XK_7,        "xdotool mousemove 0 9999" },
-    { XK_8,        "xdotool mousemove --polar 180 9999" },
-    { XK_9,        "xdotool mousemove 9999 9999" },
+    { XK_6,        "xdotool mousemove --polar 90 9999 mousemove_relative -- -50 0" },
+    { XK_7,        "xdotool mousemove 0 9999 mousemove_relative -- 50 -50" },
+    { XK_8,        "xdotool mousemove --polar 180 9999 mousemove_relative -- 0 -50" },
+    { XK_9,        "xdotool mousemove 9999 9999 mousemove_relative -- -50 -50 " },
 };
 
 /* exits on key release which allows click and exit with one key */
