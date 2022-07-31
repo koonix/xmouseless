@@ -10,7 +10,8 @@ static const unsigned int default_speed = 400;
 /* changes the speed of the mouse pointer */
 static SpeedBinding speed_bindings[] = {
     /* key             speed */
-    { XK_Alt_R,      5000 },
+    { XK_k,          2000 },
+    { XK_j,          100  },
     { XK_Shift_L,    2000 },
     { XK_Control_L,  100  },
 };
@@ -31,9 +32,10 @@ static MoveBinding move_bindings[] = {
 static ClickBinding click_bindings[] = {
     /* key         button */
     { XK_space,    1 },
-    { XK_c,        1 },
-    { XK_m,        2 },
+    { XK_i,        2 },
+    { XK_x,        2 },
     { XK_r,        3 },
+    { XK_o,        3 },
 };
 
 /* scrolls up, down, left and right
